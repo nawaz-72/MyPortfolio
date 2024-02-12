@@ -11,6 +11,7 @@ import Avatar from "../components/Avatar";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
+    <ParticlesContainer />
       <div className="w-full h-full bg-gradient-to-r  frpm-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center items-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
@@ -55,18 +56,6 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
         </div>
-      </div>
-      <div className="w-[1200px] h-full absolute right-0 bottom-0 -z-50">
-        <ParticlesContainer />
-        <motion.div
-          variants={fadeIn("up", 0.6)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[6%] xl:right-0"
-        >
-        </motion.div>
       </div>
     </div>
   );
