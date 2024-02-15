@@ -5,6 +5,7 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
+  RxArrowTopRight,
 } from "react-icons/rx";
 
 
@@ -37,8 +38,50 @@ const serviceData = [
   },
 ];
 
+import {Swiper, SwiperSlide} from "swiper/react"
+import {FreeMode, Pagination} from "swiper"
+
+import 'swiper/css'
+import "swiper/css/free-mode"
+import "swiper/css/pagination"
+
+
+
 const ServiceSlider = () => {
-  return <div>Service Slider</div>;
+  return <Swiper breakpoints={{
+    328: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    }
+  }}
+  freeMode={true}
+  pagination={{
+    clickable: true
+  }}
+  modules={[FreeMode, Pagination]}
+  className="h-[240px] sm:h-[340px]">
+    {serviceData.map((item, itemIndex) => {
+      return (
+        <SwiperSlide key={itemIndex}>
+          <div className="bg-[rgba(65,47,123,0.16)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-8 sm:gap-x-0 cursor-pointer hover:bg-[rgba(85,69,185,0.16)] transition-all duration-300 group">
+            <div className="text-4xl text-accent mb-4 ">{item.icon}</div>
+            <div className="mb-8">
+            <div className="mb-2 text-lg">{item.title}</div>
+            <p className="max-w-[350px] leading-normal">{item.description}</p>
+          </div>
+          <div className="text-3xl">
+            <RxArrowTopRight className="group-hover:text-accent group-hover:rotate-45 transition-all duration-300"/>
+          </div>
+          </div>
+          
+        </SwiperSlide>
+      )
+    })}
+  </Swiper>;
 };
 
 export default ServiceSlider;
