@@ -10,15 +10,15 @@ const Work = () => {
   return (
     <div className="h-screen bg-primary/30 py-36 flex items-center justify-center ">
       <Circles />
-      <div className=" container mx-auto">
-        <div className="flex flex-col  xl:flex-row gap-x-6 ">
-          <div className="text-center flex xl:w-[40vw] flex-col lg:text-left mb-4">
+      <div className=" container mx-auto ">
+        <div className="flex flex-col  xl:flex-row gap-x-6 md:gap-x-2 lg:gap-x-6 ">
+          <div className="text-center flex xl:w-[40vw] flex-col lg:text-left  mb-4 md:mb-2 lg:mb-4">
             <motion.h2
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h4 xl:mt-8"
+              className="h4 xl:mt-8 !mb-2"
             >
               My Work<span className="text-accent ">.</span>
             </motion.h2>
@@ -27,7 +27,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 md:mb-2 lg:mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               Lorem abc askjdliajd asdahsiadha dashd sadas.A sadasdjka asjhduadg
               jifjoidjf jjld
@@ -38,7 +38,7 @@ const Work = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[65%]"
+            className="w-full md:max-w-[60%] md:mx-auto lg:max-w-[80%] lg:mx-auto xl:max-w-[65%] "
           >
             <WorkSlider />
           </motion.div>

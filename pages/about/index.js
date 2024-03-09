@@ -151,7 +151,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h3"
+            className="h3 z-10"
           >
             Capitivating <span className="text-accent">stories</span> birth
             magnificent desgin.
@@ -161,7 +161,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0  mb-6 xl:mb-12  px-2  xl:px-0 "
+            className="max-w-[500px] mx-auto xl:mx-0  mb-6 xl:mb-12  px-2  xl:px-0  z-10"
           >
             add about info
           </motion.p>
