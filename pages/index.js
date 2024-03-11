@@ -11,7 +11,7 @@ import Avatar from "../components/Avatar";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
-    <ParticlesContainer />
+      <ParticlesContainer />
       <div className="w-full h-full bg-gradient-to-r  frpm-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center items-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
@@ -21,13 +21,13 @@ const Home = () => {
             exit="hidden"
             className="h2 xxl:h1"
           >
-          I&#39;m a {' '}
+            I&#39;m a{" "}
             <Typed
-            style={{color: '#F13024'}}
+              style={{ color: "#F13024" }}
               strings={[
-                'Software Engineer',
-                'Full Stack Developer',
-                'Unit Tester',
+                "Software Engineer",
+                "Full Stack Developer",
+                "Unit Tester",
               ]}
               typeSpeed={50} // You can customize the typing speed if needed
               backSpeed={30} // You can customize the backspacing speed if needed
