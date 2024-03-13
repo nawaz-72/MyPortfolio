@@ -161,9 +161,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0  mb-6 xl:mb-12  px-2  xl:px-0  z-10"
+            className="max-w-[500px] mx-auto xl:mx-0  mb-6 xl:mb-12  px-2  xl:px-0  z-10  xl:line-clamp-4 xxl:line-clamp-none"
           >
-            add about info
+            COMSATS alum and Software Engineer at Altaurux, I blend front-end creativity with back-end stability using technologies like Next.js, React, and Node.js. I'm passionate about delivering seamless websites and eager for new challenges that fuel my growth in web development. 
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
