@@ -27,7 +27,7 @@ const Home = () => {
               strings={[
                 "Software Engineer",
                 "Full Stack Developer",
-                "Unit Tester",
+                "Quality Assurance Developer",
               ]}
               typeSpeed={50} // You can customize the typing speed if needed
               backSpeed={30} // You can customize the backspacing speed if needed
@@ -39,9 +39,9 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-center"
           >
-            write your compreshive description who you are what your are doing
+            Expert in crafting scalable, robust, and intuitive software solutions that embody quality excellence.
           </motion.p>
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
