@@ -13,28 +13,28 @@ import {
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Software',
+    description: 'End-to-end software development services from requirement analysis to deployment and support.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'QA',
+    description: 'Comprehensive testing services to ensure software reliability, performance, and user satisfaction.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Custom website design and development, including e-commerce, responsive design, and maintenance.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Consultation',
+    description: ' Expert advice on software architecture, technology stack, and best practices in web development.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Maximize your site’s search engine ranking with our SEO services, crafted for impactful online engagement.',
   },
 ];
 
@@ -63,7 +63,7 @@ const ServiceSlider = () => {
     clickable: true
   }}
   modules={[FreeMode, Pagination]}
-  className="h-[240px] sm:h-[340px]">
+  className="h-[290px] sm:h-[370px]">
     {serviceData.map((item, itemIndex) => {
       return (
         <SwiperSlide key={itemIndex}>
@@ -71,7 +71,7 @@ const ServiceSlider = () => {
             <div className="text-4xl text-accent mb-4 ">{item.icon}</div>
             <div className="mb-8">
             <div className="mb-2 text-lg">{item.title}</div>
-            <p className="max-w-[350px] leading-normal">{item.description}</p>
+            <p className="max-w-[350px] leading-normal line-clamp-5 sm:line-clamp-3 md:line-clamp-4 lg:line-clamp-none">{item.description}</p>
           </div>
           <div className="text-3xl">
             <RxArrowTopRight className="group-hover:text-accent group-hover:rotate-45 transition-all duration-300"/>
