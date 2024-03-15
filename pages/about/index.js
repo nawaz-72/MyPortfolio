@@ -7,13 +7,22 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaNode,
+  FaGithub
 } from "react-icons/fa";
+import { TbBrandTailwind } from "react-icons/tb";
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiSequelize,
+  SiPostman,
+  SiJira
 } from "react-icons/si";
 
 // data
@@ -22,48 +31,34 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Frontend Development",
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <FaHtml5 key="html5" className="text-accent" />,
+          <FaCss3 key="css3" className="text-accent" />,
+          <FaJs key="js" className="text-accent" />,
+          <FaReact key="react" className="text-accent" />,
+          <SiNextdotjs key="nextjs" className="text-accent" />,
+          <SiFramer key="framer" className="text-accent" />,
+          <TbBrandTailwind key="tailwind" className="text-accent" />,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Backend Developemnt",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="xd" />,
-          <SiAdobephotoshop key="photoshop" />,
-        ],
-      },
-    ],
-  },
-  {
-    title: "Awards",
-    info: [
-      {
-        title: "Gold Medal",
-        icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <FaNode key="node" className="text-accent" />,
+          <SiExpress key="express" className="text-accent" />,
+          <SiMongodb key="mongodb" className="text-accent" />,
+          <SiMysql key="sql" className="text-accent" />,
+          <SiSequelize key="sequlize" className="text-accent" />,
+          <SiPostman key="postman" className="text-accent" />,
+          
         ],
       },
       {
-        title: "Silver Medal",
+        title: "Version Control",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="xd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          <FaGithub key="git" className="text-accent"/>,
+          <SiJira key="jira" className="text-accent"/>,
         ],
       },
     ],
@@ -72,23 +67,27 @@ const aboutData = [
     title: "Expertise",
     info: [
       {
-        title: "Web Development",
+        title: "Software Enginnering",
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <p key="engineering" className="text-xs">Leveraging my degree from <span className="text-accent">COMSATS</span>, I apply systematic engineering principles to develop software that is <span className="text-accent">efficient</span>, <span className="text-accent">reliable</span>, and <span className="text-accent">scalable</span>.</p>
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Full Stack Development",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="xd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          <p key="development" className="text-xs">With a strong command of both <span className="text-accent">fontend</span> and <span className="text-accent">backend</span> technologies, I create cohesive and <span className="text-accent">dynamic web applications</span> that provide seamless user experiences.</p>
+        ],
+      },
+      {
+        title: "Quality Assurance",
+        icons: [
+          <p key="qa" className="text-xs"> My meticulous <span className="text-accent">approach</span> to testing ensures that all software I deliver meets the  <span className="text-accent">highest standards of quality</span>, contributing to the overall success of the projects.</p>
+        ],
+      },
+      {
+        title: "Innovation and Problem-Solving",
+        icons: [
+          <p key="PS" className="text-xs">I am passionate about tackling <span className="text-accent">complex</span> challenges and <span className="text-accent">innovating</span> solutions that push the boundaries of web development.</p>
         ],
       },
     ],
@@ -97,23 +96,23 @@ const aboutData = [
     title: "Educations",
     info: [
       {
-        title: "Web Development",
+        title: "Bachelors",
         icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <div key="bachelors" className="flex flex-col -gap-4 text-sm">
+          <p>Software Engineering</p>
+          <p className="text-xs text-accent">2019-2023</p>
+          </div>
+          
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Intermediate",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="xd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          <div  key="inter"className="flex flex-col -gap-4 text-sm">
+          <p>Computer Science</p>
+          <p className="text-xs text-accent">2016-2018</p>
+          </div>
+          
         ],
       },
     ],
@@ -163,7 +162,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0  mb-6 xl:mb-12  px-2  xl:px-0  z-10  xl:line-clamp-4 xxl:line-clamp-none"
           >
-            Comsats alum and Software Engineer at Altaurux, I blend front-end creativity with back-end stability using technologies like Next.js, React, and Node.js. I&#39;m passionate about delivering seamless websites and eager for new challenges that fuel my growth in web development. 
+            Comsats alum and Software Engineer at Altaurux, I blend front-end creativity with back-end stability using technologies like Next.js, React, and Node.js. I&#39;m passionate about delivering seamless websites and eager for new challenges that fuel my growth in web development.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -215,10 +214,9 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
+                  className={`${index === itemIndex &&
                     "text-accent scale-110  after:w-[100%] after:bg-accent after:transition-all after:duration-300 font-bold "
-                  } cursor-pointer capitalize  xl:text-lg  relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0 `}
+                    } cursor-pointer capitalize  xl:text-lg  relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0 `}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -233,7 +231,7 @@ const About = () => {
                   key={itemIndex}
                   className="flex-1 flex flex-col lg:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light leading-5 mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
