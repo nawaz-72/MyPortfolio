@@ -69,25 +69,25 @@ const aboutData = [
       {
         title: "Software Enginnering",
         icons: [
-          <p className="text-xs">Leveraging my degree from <span className="text-accent">COMSATS</span>, I apply systematic engineering principles to develop software that is <span className="text-accent">efficient</span>, <span className="text-accent">reliable</span>, and <span className="text-accent">scalable</span>.</p>
+          <p key="engineering" className="text-xs">Leveraging my degree from <span className="text-accent">COMSATS</span>, I apply systematic engineering principles to develop software that is <span className="text-accent">efficient</span>, <span className="text-accent">reliable</span>, and <span className="text-accent">scalable</span>.</p>
         ],
       },
       {
         title: "Full Stack Development",
         icons: [
-          <p className="text-xs">With a strong command of both <span className="text-accent">fontend</span> and <span className="text-accent">backend</span> technologies, I create cohesive and <span className="text-accent">dynamic web applications</span> that provide seamless user experiences.</p>
+          <p key="development" className="text-xs">With a strong command of both <span className="text-accent">fontend</span> and <span className="text-accent">backend</span> technologies, I create cohesive and <span className="text-accent">dynamic web applications</span> that provide seamless user experiences.</p>
         ],
       },
       {
         title: "Quality Assurance",
         icons: [
-          <p className="text-xs"> My meticulous <span className="text-accent">approach</span> to testing ensures that all software I deliver meets the  <span className="text-accent">highest standards of quality</span>, contributing to the overall success of the projects.</p>
+          <p key="qa" className="text-xs"> My meticulous <span className="text-accent">approach</span> to testing ensures that all software I deliver meets the  <span className="text-accent">highest standards of quality</span>, contributing to the overall success of the projects.</p>
         ],
       },
       {
         title: "Innovation and Problem-Solving",
         icons: [
-          <p className="text-xs">I am passionate about tackling <span className="text-accent">complex</span> challenges and <span className="text-accent">innovating</span> solutions that push the boundaries of web development.</p>
+          <p key="PS" className="text-xs">I am passionate about tackling <span className="text-accent">complex</span> challenges and <span className="text-accent">innovating</span> solutions that push the boundaries of web development.</p>
         ],
       },
     ],
@@ -98,7 +98,7 @@ const aboutData = [
       {
         title: "Bachelors",
         icons: [
-          <div className="flex flex-col -gap-4 text-sm">
+          <div key="bachelors" className="flex flex-col -gap-4 text-sm">
           <p>Software Engineering</p>
           <p className="text-xs text-accent">2019-2023</p>
           </div>
@@ -108,7 +108,7 @@ const aboutData = [
       {
         title: "Intermediate",
         icons: [
-          <div className="flex flex-col -gap-4 text-sm">
+          <div  key="inter"className="flex flex-col -gap-4 text-sm">
           <p>Computer Science</p>
           <p className="text-xs text-accent">2016-2018</p>
           </div>
