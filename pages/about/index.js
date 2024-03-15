@@ -51,14 +51,14 @@ const aboutData = [
           <SiMysql key="sql" className="text-accent" />,
           <SiSequelize key="sequlize" className="text-accent" />,
           <SiPostman key="postman" className="text-accent" />,
-          
+
         ],
       },
       {
         title: "Version Control",
         icons: [
-          <FaGithub key="git" className="text-accent"/>,
-          <SiJira key="jira" className="text-accent"/>,
+          <FaGithub key="git" className="text-accent" />,
+          <SiJira key="jira" className="text-accent" />,
         ],
       },
     ],
@@ -93,26 +93,26 @@ const aboutData = [
     ],
   },
   {
-    title: "Educations",
+    title: "Education",
     info: [
       {
         title: "Bachelors",
         icons: [
           <div key="bachelors" className="flex flex-col -gap-4 text-sm">
-          <p>Software Engineering</p>
-          <p className="text-xs text-accent">2019-2023</p>
+            <p>Software Engineering</p>
+            <p className="text-xs text-accent">2019-2023</p>
           </div>
-          
+
         ],
       },
       {
         title: "Intermediate",
         icons: [
-          <div  key="inter"className="flex flex-col -gap-4 text-sm">
-          <p>Computer Science</p>
-          <p className="text-xs text-accent">2016-2018</p>
+          <div key="inter" className="flex flex-col -gap-4 text-sm">
+            <p>Computer Science</p>
+            <p className="text-xs text-accent">2016-2018</p>
           </div>
-          
+
         ],
       },
     ],
