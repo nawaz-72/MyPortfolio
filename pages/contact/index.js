@@ -2,11 +2,10 @@ import Circles from "/components/Circles";
 
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
 
 const Contact = () => {
   return (
-    <motion.div className="h-full bg-primary/30 "  exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.3 } }}>
+    <motion.div className="h-full bg-primary ">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full ">
         <div className="flex flex-col w-full max-w-[700px] ">
           <h2 className="h2 text-center mb-12">

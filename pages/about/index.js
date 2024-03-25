@@ -130,7 +130,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="h-full bg-primary py-32 text-center xl:text-left ">
       <Circles />
       {/* Avatar Image */}
       <motion.div

@@ -10,9 +10,9 @@ import Avatar from "../components/Avatar";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary h-full">
       <ParticlesContainer />
-      <div className="w-full h-full bg-gradient-to-r  frpm-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-full">
         <div className="text-center flex flex-col justify-center items-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.3)}
@@ -23,7 +23,7 @@ const Home = () => {
           >
             I&#39;m a{" "}
             <Typed
-              style={{ color: "#F13024" }}
+              style={{ color: "#df2935" }}
               strings={[
                 "Software Engineer",
                 "Full Stack Developer",
