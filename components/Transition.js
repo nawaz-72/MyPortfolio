@@ -19,7 +19,7 @@ const Transition = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#080708]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -35,7 +35,7 @@ const Transition = () => {
         transition={{ delay: 0.4, duration: 0.5, ease: "easeInOut" }}
       ></motion.div>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#2e2257]"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[rgba(46,74,99,0.16)]"
         variants={transitionVariants}
         initial="initial"
         animate="animate"
