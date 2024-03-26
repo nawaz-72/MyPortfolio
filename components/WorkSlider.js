@@ -8,39 +8,20 @@ const workSlides = {
           path: "/check2.jpg",
         },
         {
-          title: "title",
-          path: "/check2.jpg",
+          title: "Bidswinsteer",
+          path: "/check3.jpg",
         },
         {
-          title: "title",
-          path: "/check2.jpg",
+          title: "Appravi",
+          path: "/check5.jpg",
         },
         {
-          title: "title",
-          path: "/check2.jpg",
+          title: "Standout",
+          path: "/check6.jpg",
         },
       ],
     },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/check2.jpg",
-        },
-        {
-          title: "Theta Vibes",
-          path: "/check2.jpg",
-        },
-        {
-          title: "title",
-          path: "/check2.jpg",
-        },
-        {
-          title: "title",
-          path: "/check2.jpg",
-        },
-      ],
-    },
+    
   ],
 };
 
